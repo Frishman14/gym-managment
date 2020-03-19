@@ -1,6 +1,6 @@
 # gym-managment
 
-just with bash into the root directory. (mangae.py dir)
+just get in with bash into the root directory. (mangae.py dir)
 
 make command: python manage.py runserver
 
