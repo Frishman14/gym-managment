@@ -1,0 +1,11 @@
+{% extends 'customers/base.html' %}
+{% block content %}
+
+<ul>
+    {% for activity, participate in object_list %}
+        <li><b>The most Participate Activity:</b> {{activity}}</li>
+        <li><b>number of participate:</b> {{participate}}</li>
+        *************************************************************
+    {% endfor %}
+</ul>
+{% endblock %}

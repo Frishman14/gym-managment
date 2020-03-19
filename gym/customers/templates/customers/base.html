@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>GYM - CMS</title>
+
+</head>
+<body>
+
+<header><h1><b>HOLMES PLACE MANAGEMENT</b></h1></header>
+        <nav>
+            <a href="{%url 'index' %}">--  home  --</a>
+            <a href="{% url 'all_customers' %}">--  all customers  --</a>
+            <a href="{% url 'customer_by_sub_student' %}">--  all students subscribes  --</a>
+            <a href="{% url 'cust_in_pilates_on_sunday' %}">--  customers in Pilates on next sunday  --</a>
+            <a href="{% url 'most_participate_cust' %}">--  most participate customer  --</a>
+            <a href="{% url 'most_participates_activity' %}">--  most participates activity  --</a>
+        </nav>
+    {% block content%}<h1>WELCOME TO HOLMES PLACE MANAGMENT SITE</h1>{% endblock %}
+    <h1>@FRISHMAN</h1>
+</body>
+</html>

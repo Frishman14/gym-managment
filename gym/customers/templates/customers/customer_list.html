@@ -1,0 +1,12 @@
+{% extends 'customers/base.html' %}
+
+{% block content %}
+<ul>
+    {% for customer in object_list %}
+        <li><b>Details of:</b>{{customer.first_name}} {{customer.last_name}}</li>
+        <li><b>{{customer.subscribe_plan}}</b></li>
+        <li><b>registered activities:</b> {{customer.activity_names}}</li>
+        *************************************************************
+    {% endfor %}
+</ul>
+{% endblock %}
